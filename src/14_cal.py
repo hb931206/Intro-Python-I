@@ -31,19 +31,22 @@ import sys
 import calendar
 from datetime import datetime
 
-args = sys.argv
+args = len(sys.argv)
+calendar = calendar.TextCalendar()
 
-if len(args) == 0:
-    month = datetime.now().month
-    year = datetime.now().year
+month = datetime.today().month
+year = datetime.today().year
 
-elif len(args) == 1:
-    month = args[0]
-    year = datetime.now().year
 
-elif len(args) == 2:
-    month = args[0]
-    year = args[1]
+if args == 1:
+    calendar.prmonth(year, month)
+
+elif args == 2:
+    calendar.prmonth(year, int(sys.argv[1]))
+
+elif args == 3:
+    calendar.prmonth(int(sys.argv[2]), int(sys.argv[1]))
 
 else:
     print("Please give a month and year ")
+    quit()

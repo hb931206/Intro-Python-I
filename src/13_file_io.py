@@ -20,11 +20,13 @@ with open("foo.txt") as f:
 # writing. Write three lines of arbitrary content to that file,
 # then close the file. Open up "bar.txt" and inspect it to make
 # sure that it contains what you expect it to contain
-path = "/Users/henrybrophy/Documents/Lambda_Assignments/CS1/Intro-Python-I/src/bar.txt"
-bar = open(path, "w")
-bar.write("To Be. Or not to Be. That is the question. \n"
-          "Luke I'm your farther. \n"
-          "I'm going to make him an offer he can't refuse")
-bar.close
+path = "/Users/henrybrophy/Documents/Lambda_Assignments/CS1/Intro-Python-I/src/drew.txt"
+drew = open(path, "w")
+drew.write("To Be. Or not to Be. That is the question. \n"
+           "Luke I'm your farther. \n"
+           "I'm going to make him an offer he can't refuse \n"
+           "We UpNorth"
+           )
+drew.close
 
 # YOUR CODE HERE
