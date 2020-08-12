@@ -11,22 +11,22 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 
 # YOUR CODE HERE
 with open("foo.txt") as f:
-    read_data = f.read()
-    print(read_data)
-    f.close
+    print(f.read())
+
+
+# f = open('foo.txt')
+# print(f.read)
+# f.close()
 
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
 # then close the file. Open up "bar.txt" and inspect it to make
 # sure that it contains what you expect it to contain
-path = "/Users/henrybrophy/Documents/Lambda_Assignments/CS1/Intro-Python-I/src/drew.txt"
-drew = open(path, "w")
-drew.write("To Be. Or not to Be. That is the question. \n"
-           "Luke I'm your farther. \n"
-           "I'm going to make him an offer he can't refuse \n"
-           "We UpNorth"
-           )
-drew.close
+# path = "/Users/henrybrophy/Documents/Lambda_Assignments/CS1/Intro-Python-I/src/drew.txt"
+with open("mond.txt", "w") as w:
+    w.write("It's Monday"
+            )
+    w.close
 
 # YOUR CODE HERE
